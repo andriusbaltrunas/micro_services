@@ -1,0 +1,9 @@
+version: "3.2"
+services:
+  firestore_emulator:
+    image: mtlynch/firestore-emulator
+    environment:
+      - FIRESTORE_PROJECT_ID=order-project
+      - PORT=8070
+    ports:
+      - 8070:8070
