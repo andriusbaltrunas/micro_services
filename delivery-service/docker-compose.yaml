@@ -7,3 +7,6 @@ services:
     environment:
       POSTGRES_PASSWORD: mypassword
       POSTGRES_USER: eshop
+    ports:
+      - '5432:5432'
+    container_name: delivery_service_postgres
